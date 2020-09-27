@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap");
+/* Universal styles --------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Merriweather", Arial, serif;
+  background-color: black;
+}
+
+.wrapper,
+.iss-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+footer {
+  background-color: #ffffff;
+  margin-top: 5%;
+}
+
+header {
+  height: 90vh;
+}
+
+p {
+  color: #f1f2ef;
+  font-family: "Merriweather", Arial, serif;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 4%;
+  color: #f1f2ef;
+  border-bottom: 3px solid #7bacdd;
+  font-family: "Oswald", Arial, sans-serif;
+}
+
+h2 {
+  color: #f1f2ef;
+  font-family: "Merriweather", Arial, serif;
+}
+
+h3 {
+  color: #f1f2ef;
+  font-family: "Merriweather", Arial, serif;
+}
+
+a {
+  font-size: 1em;
+}
+
+/* Homepage -----------*/
+.index-info-container {
+  color: black;
+}
+
+.info-box p {
+  text-align: left;
+}
+
+.info-box h1 {
+  padding-top: 5%;
+}
+
+.info-box h2 {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.info-box img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  float: right;
+  border-radius: 6px;
+}
+
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../photos/dragon_flickr.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 3.4em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header-text h2 {
+  font-size: 1.9em;
+  font-weight: 300;
+}
+
+.header-btn {
+  text-decoration: none;
+  color: #ffffff;
+  background: #000000;
+  padding: 13px 29px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  border-style: ridge;
+  border-width: 2px;
+  border-color: #f1f2ef;
+  font-size: 1.5em;
+}
+
+.header-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Mid-part of the home page ---------*/
+.mid-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 90vh;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-text {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.mid-text p {
+  font-size: 1.2em;
+  text-align: left;
+  max-width: 500px;
+  background-color: #050000;
+  border-radius: 8px;
+  padding: 20px;
+  margin-left: 1px;
+}
+
+.mid-text h2 {
+  font-size: 2em;
+  max-width: 500px;
+  text-align: center;
+}
+
+.read-btn {
+  color: white;
+  text-decoration: none;
+  color: #ffffff;
+  background: black;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border-style: ridge;
+  font-weight: bold;
+}
+
+.read-btn:hover {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+/* Navigation and Hamburger-menu --------*/
+nav {
+  color: #f1f2ef;
+  background-color: transparent;
+  padding-right: 2%;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: right;
+  padding-top: 0px;
+  font-family: "Oswald";
+}
+
+#hamburger-menu {
+  display: none;
+  margin-left: 50%;
+}
+
+.ul {
+  display: flex;
+}
+
+a {
+  color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding: 10px;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #7bacdd;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  list-style-type: none;
+  margin-top: 1.5%;
+}
+
+/* Crew ----------------- */
+.crew-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.crew-box img {
+  width: 100%;
+  height: auto;
+}
+
+.crew-box a {
+  display: inline-block;
+  background: black;
+  border-style: ridge;
+  padding: 5px 15px;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  font-size: 1.6em;
+}
+
+.crew-box a:hover {
+  background-color: #f1f2ef;
+  color: #050000;
+  border-style: ridge;
+  border-radius: 5px;
+  border-color: #7bacdd;
+}
+.crew-number-container {
+  color: #f1f2ef;
+  text-align: center;
+}
+
+.crew-number-container h2 {
+  padding-top: 5%;
+}
+
+.crew-box {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.crew-box img {
+  border-style: ridge;
+}
+
+.crew-top-left-text {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.crew-learn-btn {
+  text-decoration: none;
+  color: #f1f2ef;
+  background: #050000;
+  width: 40%;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.crew-learn-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.crew-bottom-right-text {
+  margin: 0;
+}
+
+.crew-top-left-text p {
+  margin: 0;
+}
+
+/* Launch ---------------- */
+.upcoming-launch-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #f1f2ef;
+}
+
+.upcoming-launch-container h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.launch-box img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 7%;
+}
+
+.launch-box {
+  width: 100%;
+  border-width: 5px;
+  border-bottom-style: ridge;
+  max-width: 600px;
+  margin-bottom: 2%;
+}
+
+/* Contact form CSS ------------*/
+.contact-container {
+  max-width: 760px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+form {
+  padding: 2em;
+  background: #f1f2ef;
+  border-radius: 1rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn-contact {
+  position: relative;
+  background-color: #050000;
+  color: #f1f2ef;
+  padding: 15px 40px 15px 40px;
+  margin-left: 40%;
+  font-size: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  border-color: #7bacdd;
+}
+
+.btn-contact:hover {
+  color: #050000;
+  background-color: #f1f2ef;
+  border-color: #7bacdd;
+}
+
+.contact-footer {
+  margin-top: 25%;
+}
+.btn-placement p {
+  color: black;
+  text-align: center;
+  border-radius: 2px;
+}
+
+label {
+  display: none;
+}
+
+.contact-container label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #050000;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 200px;
+}
+
+/*Timeline Homepage ------------------*/
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #050000;
+  padding-top: 2%;
+  border-top: 2px solid #7bacdd;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: #7bacdd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #f1f2ef;
+  border: 4px solid #7bacdd;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #f1f2ef;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #f1f2ef;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #f1f2ef;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f1f2ef transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content-inside {
+  padding: 20px 30px;
+  background-color: #131313;
+  color: #f1f2ef;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Crew ISS -------------*/
+.iss-people-container {
+  text-align: center;
+}
+
+.isscrew-box {
+  flex: 1;
+  max-width: 100%;
+  border-style: ridge;
+  border-color: #7bacdd;
+}
+
+/* Commercial Flights -------*/
+.flights-placement {
+  text-align: center;
+  display: block;
+  background-color: #f1f2ef;
+  color: #050000;
+  padding: 10px;
+  max-width: 20%;
+  margin-left: 40%;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.flights-placement:hover {
+  background-color: #7bacdd;
+  color: #050000;
+  border-style: ridge;
+  border-color: white;
+}
+/* ISS page --------------*/
+.iss-current-location-container {
+  text-align: center;
+  padding-top: 3%;
+}
+
+.iss-counter-container {
+  text-align: center;
+  padding-top: 3%;
+}
+
+.iss-location-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-style: ridge;
+  border-top-color: #7bacdd;
+  border-bottom-color: #7bacdd;
+  margin-bottom: 9%;
+}
+
+.location-box {
+  flex: 1;
+  max-width: 100%;
+  flex: 1;
+  max-width: 100%;
+}
+
+.general-iss-info img {
+  width: 100%;
+  height: auto;
+}
+
+.iss-container img {
+  width: 100%;
+}
+
+.general-iss-info h2 {
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* Dragon page --------*/
+.dragon-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.current-dragons-container {
+  color: #f1f2ef;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.current-dragons-container h2 {
+  text-align: center;
+  margin-top: 8%;
+  padding-top: 5%;
+  border-style: ridge;
+  border-left-color: #7bacdd;
+  border-right-color: #7bacdd;
+  padding-bottom: 5%;
+}
+
+.dragon-box {
+  color: #f1f2ef;
+  margin: 20px;
+}
+
+.dragon-box p {
+  max-width: 100%;
+  text-align: left;
+}
+
+.dragon-box h3 {
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 2px solid #7bacdd;
+}
+
+.dragon-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Social media inside of footer*/
+.some-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.some img {
+  width: 30px;
+  height: 30px;
+}
+
+.some {
+  display: inline-block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  order: 2;
+}
+
+.footer-name {
+  order: 1;
+}
+
+.footer-name p {
+  color: black;
+  margin-left: 10px;
+}
+
+/* Media query - Responsive from small phones to large desktop screens */ /*Previous 835*/
+@media only screen and (max-width: 955px) {
+  /*Hamburger-menu for mobile and tablet screen*/
+  nav {
+    display: none;
+    color: transparent;
+  }
+
+  label {
+    display: block;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .fa-bars {
+    color: white;
+    margin-left: 10px;
+    padding-top: 8px;
+  }
+
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  nav {
+    text-align: left;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  .wrapper,
+  .iss-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .timeline-container {
+    width: 100%;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .dragon-container {
+    flex-direction: column;
+  }
+
+  .dragon-box {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  /* Crew changes to mobile and tablet*/
+  .crew-container {
+    flex-direction: column;
+  }
+
+  .crew-box {
+    margin: 20px;
+    align-self: center;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid #f1f2ef;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f1f2ef transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
+  .flights-placement {
+    margin-left: 30%;
+    max-width: 40%;
+  }
+}

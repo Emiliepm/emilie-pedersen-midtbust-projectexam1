@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+        <meta name="description" content="Have any questions regarding SpaceX or feedback? Contact us through this form.">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+
+    <body>
+        <label for="hamburger-menu"><i class="fas fa-bars fa-2x"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <ul>            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dragon.html">Dragon</a></li>
+                <li><a href="crew.html">Crew</a></li>
+                <li><a href="launches.html">Launches</a></li>
+                <li><a href="issActivity.html">ISS</a></li>
+                <li><a href="commercialflights.html">Commercial Flights</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+    </nav>
+
+<div class="wrapper">
+<main class="contact-container">
+    <h1>Ask us anything</h1>
+    
+    <form action="index.html" method="GET" id="contactForm">
+            <label>
+                First name: 
+                <input name="firstName" id="firstName" placeholder="Cannot be empty." />
+            </label>
+            <div class="form-error" id="firstNameError">Please enter your first name</div>
+
+            <label>
+                Last name:
+                <input name="lastName" id="lastName" placeholder="Must be at least 4 characters." />
+            </label>
+            <div class="form-error" id="lastNameError">Your last name must be at least 4 characters</div>
+            <label>
+                Email:
+                <input name="email" id="email" placeholder="Enter a valid email."/>
+            </label>
+            <div class="form-error" id="emailError">Please enter a valid email address</div>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write question here."></textarea>
+      <div class="btn-placement">
+            <button type="submit" class="btn-contact" id="submit">Submit</button>
+    </div>
+        </form>
+</main>
+</div>
+
+<footer class=>
+    <div class="some-container">
+      <div class="footer-name">
+        <p>&#169Emilie Pedersen Midtbust</p>
+      </div>
+      <div class="some">
+        <li>
+          <a href="https://www.instagram.com/">
+            <img
+              src="photos/instagram.png"
+              alt="Black and white Facebook Icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/">
+            <img
+              src="photos/facebook.png"
+              alt="Black and white Facebook Icon"></a>
+        </li>
+      </div>
+    </div>
+  </footer>
+  <script src="js/contact.js"></script>
+</body>
+</html>
+
+
